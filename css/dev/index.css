@@ -498,6 +498,7 @@ body {
     flex-direction: column;
     background-color: #212020;
     gap: 2.75rem;
+    z-index: 10;
     overflow: auto;
     padding: 10.625rem 0.9375rem 1.875rem 0.9375rem;
     transition: left 0.3s;
@@ -510,7 +511,7 @@ body {
     left: -100%;
     top: 0;
     transition: left 0.3s;
-    z-index: 2;
+    z-index: 10;
   }
   [data-fls-menu-open] .menu__body {
     left: 0;
@@ -520,6 +521,7 @@ body {
   }
   .menu__list {
     flex-direction: column;
+    color: #9e55eb;
   }
   .menu__link {
     font-size: 1.625rem;
@@ -529,7 +531,7 @@ body {
     position: relative;
     width: 1.875rem;
     height: 1.125rem;
-    z-index: 5;
+    z-index: 11;
   }
   .icon-menu span, .icon-menu::before, .icon-menu::after {
     content: "";
