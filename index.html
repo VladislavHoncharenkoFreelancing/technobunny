@@ -5,12 +5,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>ТЕХНО ЗАЙКА</title>
-		<script type="module" crossorigin="" src="./js/index.min.js?v=1751539718588"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1751539718588">
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1751559632737"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1751559632737">
 	</head>
 	<body>
 		<div class="wrapper">
-			<header data-fls-header="" class="header">
+			<header data-fls-header="" data-fls-header-scroll="" data-fls-header-scroll-show="" class="header">
 				<div class="header__container">
 					<div class="header__body">
 						<div class="header__logo">
@@ -34,13 +34,13 @@
 										<a href="/components/pages/accessories.html" class="menu__link">Аксесуари</a>
 									</li>
 									<li class="menu__item">
-										<a href="№" class="menu__link">Контакти</a>
+										<a data-fls-scrollto="#contacts" href="#" class="menu__link">Контакти</a>
 									</li>
 									<li class="menu__item">
-										<a href="№" class="menu__link">Акції</a>
+										<a href="#" class="menu__link">Акції</a>
 									</li>
 									<li class="menu__item">
-										<a href="№" class="menu__link">Новини</a>
+										<a href="#" class="menu__link">Новини</a>
 									</li>
 								</ul>
 								<ul class="social-header__list">
@@ -64,12 +64,12 @@
 </each>
 </fetch>
 -->
-						<div class="cart">
-							<picture>
-								<img class="cart__image" alt="cart" src="./assets/img/ic-cart.webp">
-							</picture>
-							<span class="cart__quantity" data-fls-addtocart="">0</span>
-						</div>
+						<!--
+<div class="cart">
+<img class="cart__image" src="@img/ic-cart.png" alt="cart">
+<span class="cart__quantity" data-fls-addtocart>0</span>
+</div>
+-->
 					</div>
 				</div>
 			</header>
@@ -78,7 +78,7 @@
 					<section class="services">
 						<div class="services__container">
 							<div class="services__body">
-								<div data-fls-spollers="" class="spollers">
+								<div data-fls-spollers="" data-fls-spollers-one="" class="spollers">
 									<details class="spollers__item">
 										<summary class="spollers__title">
 											<article class="items-services__item">
@@ -96,8 +96,6 @@
 											</ul>
 										</div>
 									</details>
-								</div>
-								<div data-fls-spollers="" class="spollers">
 									<details class="spollers__item">
 										<summary class="spollers__title">
 											<article class="items-services__item">
@@ -115,8 +113,6 @@
 											</ul>
 										</div>
 									</details>
-								</div>
-								<div data-fls-spollers="" class="spollers">
 									<details class="spollers__item">
 										<summary class="spollers__title">
 											<article class="items-services__item">
@@ -134,8 +130,6 @@
 											</ul>
 										</div>
 									</details>
-								</div>
-								<div data-fls-spollers="" class="spollers">
 									<details class="spollers__item">
 										<summary class="spollers__title">
 											<article class="items-services__item">
@@ -155,8 +149,6 @@
 											</ul>
 										</div>
 									</details>
-								</div>
-								<div data-fls-spollers="" class="spollers">
 									<details class="spollers__item">
 										<summary class="spollers__title">
 											<article class="items-services__item">
@@ -252,7 +244,7 @@ class="quantity__button quantity__button--plus"
 									<span>клієнтів</span>
 								</h2>
 								<div data-fls-slider="" class="slider-reviews swiper">
-									<div class="slider-reviews__wrapper swiper-wrapper">
+									<div data-fls-marquee="" data-fls-marquee-speed="700" class="slider-reviews__wrapper swiper-wrapper">
 										<div class="slider-reviews__slide swiper-slide">
 											<div class="slider-reviews__body">
 												<div class="slider-reviews__user">
@@ -377,7 +369,7 @@ class="quantity__button quantity__button--plus"
 					</section>
 					<section class="info">
 						<div class="info__container">
-							<div class="info__body">
+							<div id="contacts" class="info__body">
 								<div class="info__map">
 									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2542.9077658873603!2d30.670105900000003!3d50.405556499999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c536808d4763%3A0x1a5b840e6c9f3582!2sTekhno%20Zayka!5e0!3m2!1sru!2sua!4v1751026464295!5m2!1sru!2sua" width="600" height="600" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 								</div>
@@ -437,7 +429,9 @@ class="quantity__button quantity__button--plus"
 				<div class="footer__container">
 					<div class="footer__body">
 						<a href="/components/pages/home" class="footer__logo">
-							<img src="./assets/img/logo-bunny.svg" alt="Image">
+							<picture>
+								<img alt="Image" src="./assets/img/logo-bunny.webp">
+							</picture>
 							<span>Техно Зайка</span>
 						</a>
 						<div class="footer__nav nav-footer">
