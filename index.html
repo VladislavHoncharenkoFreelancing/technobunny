@@ -5,8 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>ТЕХНО ЗАЙКА</title>
-		<script type="module" crossorigin="" src="./js/index.min.js?v=1751208965759"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1751208965759">
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1751539718588"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1751539718588">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -25,9 +25,11 @@
 							</button>
 							<nav class="menu__body">
 								<ul class="menu__list">
-									<li class="menu__item">
-										<a href="№" class="menu__link">Ціна</a>
-									</li>
+									<!--
+<li class="menu__item">
+<a href="№" class="menu__link ">Ціна</a>
+</li>
+-->
 									<li class="menu__item">
 										<a href="/components/pages/accessories.html" class="menu__link">Аксесуари</a>
 									</li>
@@ -43,20 +45,16 @@
 								</ul>
 								<ul class="social-header__list">
 									<li class="social-header__item">
-										<a href="#" class="social-header__link">
-											<img class="social-header__icon" src="./assets/img/ic-facebook.svg" alt="facebook">
+										<a href="https://t.me/tech_zayka_services" class="social-header__link">
+											<picture>
+												<img class="social-header__icon" alt="telegram" src="./assets/img/ic-telegram.webp">
+											</picture>
 										</a>
 									</li>
-									<li class="social-header__item">
-										<a href="#" class="social-header__link">
-											<img class="social-header__icon" src="./assets/img/ic_instagram.svg" alt="instagram">
-										</a>
-									</li>
-									<li class="social-header__item">
-										<a href="#" class="social-header__link">
-											<img class="social-header__icon" src="./assets/img/ic_youtube.svg" alt="youtube">
-										</a>
-									</li>
+									<!--
+<li class="social-header__item"><a href="#" class="social-header__link"><img class="social-header__icon" src="@img/ic_instagram.svg" alt="instagram"></a></li>
+<li class="social-header__item"><a href="#" class="social-header__link"><img class="social-header__icon" src="@img/ic_youtube.svg" alt="youtube"></a></li>
+-->
 								</ul>
 							</nav>
 						</div>
@@ -66,6 +64,12 @@
 </each>
 </fetch>
 -->
+						<div class="cart">
+							<picture>
+								<img class="cart__image" alt="cart" src="./assets/img/ic-cart.webp">
+							</picture>
+							<span class="cart__quantity" data-fls-addtocart="">0</span>
+						</div>
 					</div>
 				</div>
 			</header>
@@ -201,6 +205,176 @@
 							</div>
 						</div>
 					</section>
+					<!--
+<section class="test">
+<div data-fls-addtocart-product class="product">
+<article class="test__card">
+<img style="width: 60px;" data-fls-addtocart-image src="@img/airpods.svg" alt="Image" />
+<p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eius
+iusto ducimus iure a, placeat eum vitae veniam ut! Assumenda iusto
+vero corporis soluta. Illo nostrum delectus repellendus excepturi
+sed?
+</p>
+<div data-fls-quantity class="quantity">
+<button
+data-fls-quantity-minus
+type="button"
+class="quantity__button quantity__button--minus"
+></button>
+<div class="quantity__input">
+<input
+data-fls-addtocart-quantity
+data-fls-quantity-value
+autocomplete="off"
+type="text"
+name="form[]"
+value="1"
+/>
+</div>
+<button
+data-fls-quantity-plus
+type="button"
+class="quantity__button quantity__button--plus"
+></button>
+</div>
+</article>
+<button data-fls-addtocart-button>Додати у кошик</button>
+</div>
+<include src="@components/forms/addtocart/addtocart.html"></include>
+</section>
+-->
+					<section class="reviews">
+						<div class="reviews__container">
+							<div class="reviews__body">
+								<h2 class="reviews__title">
+									Відгуки наших
+									<span>клієнтів</span>
+								</h2>
+								<div data-fls-slider="" class="slider-reviews swiper">
+									<div class="slider-reviews__wrapper swiper-wrapper">
+										<div class="slider-reviews__slide swiper-slide">
+											<div class="slider-reviews__body">
+												<div class="slider-reviews__user">
+													<div class="slider-reviews__avatar">
+														<picture>
+															<img alt="Image" src="./assets/img/reviews/avatar1.webp">
+														</picture>
+													</div>
+													<div class="slider-reviews__name">
+														<p>Артём Гориславец</p>
+													</div>
+												</div>
+												<div class="slider-reviews__text">
+													<p>
+														Приходил сегодня поменять батарею и экран на телефон, мало того, что сделали быстро, недорого, так еще и снимают на видеозапись саму работу дабы показать что и как так было)))
+                    Остался очень доволен, респект❤️❤️❤️✊🏼
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="slider-reviews__slide swiper-slide">
+											<div class="slider-reviews__body">
+												<div class="slider-reviews__user">
+													<div class="slider-reviews__avatar">
+														<picture>
+															<img alt="Image" src="./assets/img/reviews/avatar2.webp">
+														</picture>
+													</div>
+													<div class="slider-reviews__name">
+														<p>Polina Shipilo</p>
+													</div>
+												</div>
+												<div class="slider-reviews__text">
+													<p>
+														Дуже задоволена сервісом! Швидко визначили проблему, якісно відремонтували мій пилосос. Пояснили, що було зламано. Персонал дуже ввічливий. Рекомендую!
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="slider-reviews__slide swiper-slide">
+											<div class="slider-reviews__body">
+												<div class="slider-reviews__user">
+													<div class="slider-reviews__avatar">
+														<picture>
+															<img alt="Image" src="./assets/img/reviews/avatar3.webp">
+														</picture>
+													</div>
+													<div class="slider-reviews__name">
+														<p>Катя Черноморова</p>
+													</div>
+												</div>
+												<div class="slider-reviews__text">
+													<p>
+														Сервіс біля дому — дуже зручно ;) Приємний персонал, порекомендували декілька варіантів вирішення проблеми і все зробили швидко за проханням. Враження позитивні!)
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="slider-reviews__slide swiper-slide">
+											<div class="slider-reviews__body">
+												<div class="slider-reviews__user">
+													<div class="slider-reviews__avatar">
+														<picture>
+															<img alt="Image" src="./assets/img/reviews/avatar4.webp">
+														</picture>
+													</div>
+													<div class="slider-reviews__name">
+														<p>Elena Akhranovich</p>
+													</div>
+												</div>
+												<div class="slider-reviews__text">
+													<p>
+														Молоді хлопці дуже швидко та якісно полагодили павербанк. Приємні у спілкуванні, уважні до деталей. Дякую та рекомендую
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="slider-reviews__slide swiper-slide">
+											<div class="slider-reviews__body">
+												<div class="slider-reviews__user">
+													<div class="slider-reviews__avatar">
+														<picture>
+															<img alt="Image" src="./assets/img/reviews/avatar5.webp">
+														</picture>
+													</div>
+													<div class="slider-reviews__name">
+														<p>Юлія Охріменко</p>
+													</div>
+												</div>
+												<div class="slider-reviews__text">
+													<p>Все зробили дуже якісно, дуже задоволена</p>
+												</div>
+											</div>
+										</div>
+										<div class="slider-reviews__slide swiper-slide">
+											<div class="slider-reviews__body">
+												<div class="slider-reviews__user">
+													<div class="slider-reviews__avatar">
+														<picture>
+															<img alt="Image" src="./assets/img/reviews/avatar6.webp">
+														</picture>
+													</div>
+													<div class="slider-reviews__name">
+														<p>Саша Сердюк</p>
+													</div>
+												</div>
+												<div class="slider-reviews__text">
+													<p>Зробили все супер швидко і якісно, дуже задоволений!</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--
+<div class="reviews__actions actions-reviews">
+<button class="actions-reviews__button"><img class="swiper-button-prev actions-reviews__icon actions-reviews__icon--left" src="@img/arrow.png" alt="Image"></button>
+<button class="actions-reviews__button"><img class="swiper-button-next actions-reviews__icon actions-reviews__icon--right"src="@img/arrow.png" alt="Image"></button>
+</div>
+-->
+							</div>
+						</div>
+					</section>
 					<section class="info">
 						<div class="info__container">
 							<div class="info__body">
@@ -268,9 +442,7 @@
 						</a>
 						<div class="footer__nav nav-footer">
 							<ul class="nav-footer__list">
-								<li class="nav-footer__item">
-									<a href="#" class="nav-footer__link">Ціна</a>
-								</li>
+								<!-- <li class="nav-footer__item"><a href="#" class="nav-footer__link">Ціна</a></li> -->
 								<li class="nav-footer__item">
 									<a href="#" class="nav-footer__link">Аксесуари</a>
 								</li>
@@ -298,23 +470,17 @@
 						<div class="footer__social social-footer">
 							<ul class="social-footer__list">
 								<li class="social-footer__item">
-									<a href="#" class="social-footer__link">
-										Ми в Facebook
-										<img src="./assets/img/ic-facebook.svg" alt="Image">
+									<a href="https://t.me/tech_zayka_services" class="social-footer__link">
+										Ми в Telegram
+										<picture>
+											<img alt="Image" src="./assets/img/ic-telegram.webp">
+										</picture>
 									</a>
 								</li>
-								<li class="social-footer__item">
-									<a href="#" class="social-footer__link">
-										Ми в instagram
-										<img src="./assets/img/ic_instagram.svg" alt="Image">
-									</a>
-								</li>
-								<li class="social-footer__item">
-									<a href="https://www.youtube.com/" class="social-footer__link">
-										Ми в YouTube
-										<img src="./assets/img/ic_youtube.svg" alt="Image">
-									</a>
-								</li>
+								<!--
+<li class="social-footer__item"><a href="#" class="social-footer__link">Ми в instagram<img src="@img/ic_instagram.svg" alt="Image"></a></li>
+<li class="social-footer__item"><a href="https://www.youtube.com/" class="social-footer__link">Ми в YouTube<img src="@img/ic_youtube.svg" alt="Image"></a></li>
+-->
 							</ul>
 						</div>
 					</div>
